@@ -6,7 +6,7 @@ uvicorn
 fastapi
 pydantic
 python-multipart
-
+deepface
 # Mongo
 # ------------------------------------------------------------------------------
 pymongo==3.10.1
