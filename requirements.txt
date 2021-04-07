@@ -1,6 +1,7 @@
 # Fastapi
 # ------------------------------------------------------------------------------
-starlette
+#starlette
+starlette==0.13.6
 uvicorn
 fastapi
 pydantic
