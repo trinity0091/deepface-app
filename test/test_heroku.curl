@@ -1,0 +1,11 @@
+curl -X POST "https://prod91.herokuapp.com/verification/" -H 'Content-Type: multipart/form-data' -H 'accept: application/json' -F 'image=@fahad1.jpg' -F 'image=@fahad2.jpg' 
+
+
+
+
+
+
+
+
+
+curl -X POST -H 'Content-Type: multipart/form-data' -H 'accept: application/json' -F 'image=@fahad1.jpg' -F 'image=@fahad2.jpg' "https://prod91.herokuapp.com/verification/"
