@@ -1,2 +1,2 @@
 worker: python preload.py
-web: uvicorn  main/run_app:app --host "0.0.0.0" --port  5001 --reload --ws 'auto' --loop 'auto' --workers 8
+web: uvicorn   -w 4 -k uvicorn.workers.UvicornWorker run_app:app 
