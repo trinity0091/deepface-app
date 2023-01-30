@@ -1,3 +1,14 @@
+
+## Build
+docker build -f  server/containers/python/Jupyter.stretch.Dockerfile --rm -t stretch/deppface-app-image:v0.0.1 .
+
+## RUN
+
+docker run --name deppface-app1  -p 8888:8888 stretch/deppface-app-image:v0.0.1
+
+
+
+
 # deep-face-api
 Full stack data-science project
 
