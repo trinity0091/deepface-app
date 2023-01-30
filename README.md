@@ -6,6 +6,10 @@ docker build -f  server/containers/python/Jupyter.buster.Dockerfile --rm -t bust
 
 docker build -f  server/containers/python/Dockerfile --rm -t ubuntu/deppface-app-image:v0.0.1 .
 
+docker build -f server/containers/python/Jupyter.ubuntu.Dockerfile --rm -t ubuntu/deppface-app-image:v0.0.1 .
+
+
+
 
 ## RUN
 
