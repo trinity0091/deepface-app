@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM debian:buster
 
 # Install OpenJDK 8
 RUN \
@@ -46,3 +46,5 @@ RUN chmod -R 777 /main
 # RUN chmod -R 777 ./
 
 WORKDIR /main
+
+CMD /run_jupyter.sh
