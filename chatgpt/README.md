@@ -77,3 +77,33 @@ Note: The -v flag mounts the current directory into the container so that the ap
 
 The output should display the result of the face verification process between the two images.
 That's it! You have successfully created a Docker container of DeepFace and run a face verification process. You can modify the app.py file to perform different tasks using DeepFace.
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker build -t trinity0091/deepface-app:gpt .
+
+docker rm trinity0091/deepface-app:gpt 
+
+
+
+
+
+docker build -t trinity0091/deepface-gpt .
+
+
+docker run --name deepface-gpt -it --rm -v /dockerco/rootco/deepface/deepface-gpt/chatgpt:/app trinity0091/deepface-gpt
+
+
+
+

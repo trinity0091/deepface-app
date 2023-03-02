@@ -1,7 +1,14 @@
+import resource
+resource.setrlimit(resource.RLIMIT_AS, (536870912, 536870912))
+
+
 import tensorflow as tf
 from PIL import Image
 from io import BytesIO
 from deepface import DeepFace
+
+
+
 
 with open("main/test_image.png", "rb") as image:
     f = image.read()
