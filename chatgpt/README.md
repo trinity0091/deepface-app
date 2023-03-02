@@ -58,14 +58,21 @@ Open a command prompt or terminal and navigate to the directory containing the D
 
 Run the following command to build the Docker container:
 
-Copy code
+```bash
 docker build -t deepface-app .
+```
+
 Note: The . at the end specifies that the Dockerfile is in the current directory.
 
 Once the container has been built, run the following command to start the container:
-bash
-Copy code
+
+```bash
+
 docker run -it --rm -v ${PWD}:/app deepface-app
+
+```
+
+
 Note: The -v flag mounts the current directory into the container so that the app.py file and images can be accessed by the container.
 
 The output should display the result of the face verification process between the two images.
