@@ -9,6 +9,8 @@ docker build -f  server/containers/python/Dockerfile --rm -t ubuntu/deppface-app
 docker build -f server/containers/python/Jupyter.ubuntu.Dockerfile --rm -t ubuntu/deppface-app-image:v0.0.1 .
 
 cd server
+
+
 docker build -f containers/python/Jupyter.ubuntu.Dockerfile --rm -t trinity0091/deppface-app:ubuntu_v1 .
 
 
