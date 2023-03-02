@@ -9,6 +9,7 @@ docker build -f  server/containers/python/Dockerfile --rm -t ubuntu/deppface-app
 docker build -f server/containers/python/Jupyter.ubuntu.Dockerfile --rm -t ubuntu/deppface-app-image:v0.0.1 .
 
 
+docker build -f server/containers/python/Jupyter.ubuntu.Dockerfile --rm -t trinity0091/deppface-app:ubuntu_v1 .
 
 
 ## RUN
@@ -21,7 +22,7 @@ docker run --name deppface-app1  -p 8888:8888 buster/deppface-app-image:v0.0.2
 
 docker run --name deppface-app1  -p 8888:8888 ubuntu/deppface-app-image:v0.0.1
 
-
+docker run --name deppface-app-ubuntu  -p 8888:8888 trinity0091/deppface-app:ubuntu_v1
 
 # deep-face-api
 Full stack data-science project
